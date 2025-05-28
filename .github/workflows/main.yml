@@ -2,7 +2,8 @@ name: greet
 'on':
   - push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    '-name': Greetings
-    run: echo "Hello World"
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hello World"
