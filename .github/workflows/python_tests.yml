@@ -1,0 +1,8 @@
+name: Python-Test
+on:
+    push
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    
+    
