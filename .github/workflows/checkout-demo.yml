@@ -3,4 +3,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: ls -la
