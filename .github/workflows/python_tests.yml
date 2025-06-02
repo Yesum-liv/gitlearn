@@ -4,5 +4,11 @@ on:
 jobs:
   pytest:
     runs-on: ubuntu-latest
+    steps:
+        - uses: actions/setup-python@v4
+        - name: installing requirements
+          run: pip install -r requirements.txt
+        - name: running pytest
+          run: pytest
     
     
