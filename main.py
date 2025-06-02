@@ -1,4 +1,4 @@
-def name_print():
-  name = input "Enter your name: "
-  print(name)
+def number():
+  num = 5
+  print(num)
 
