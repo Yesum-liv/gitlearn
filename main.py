@@ -1,4 +1,3 @@
-def number():
-  num = 5
-  print(num)
+def square(num):
+  return num*num
 
