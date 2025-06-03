@@ -1,5 +1,5 @@
-import name_print
+import number
 
 def test_name():
-  assert name_print.name() == 'John'
+  assert number.num() == 5
   
