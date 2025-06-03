@@ -1,5 +1,5 @@
-import number
+import main
 
 def test_name():
-  assert number.num() == 5
+  assert main.square(5) == 25
   
