@@ -1,0 +1,17 @@
+name: Lint-Test
+on:
+    push
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: Set up Python 
+          uses: actions/setup-python@v4
+          with: 
+              python-version: ${{matrix.python-version}}
+        - name: installing requirements
+          run: pip install -r requirements.txt
+        - name: running flake8
+          run: flake8 main.py
+    
